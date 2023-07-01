@@ -9,7 +9,7 @@
 header {
   height: 190px;
   display: grid;
-  grid-template-columns: 100px 100px 100px;
+  grid-template-columns: 220px 220px 220px;
   grid-template-rows: 60px 60px 60px;
 }
 body {
@@ -163,7 +163,7 @@ body {
 
 .section-faq {
   display: grid;
-  grid-template-columns: 220px 100px 1fr;
+  grid-template-columns: 220px 220px 220px;
   grid-template-rows: 100px 100px 100px;
 }
 .section-faq h1 {
@@ -205,6 +205,9 @@ body {
     transform: translate3d(0, 0, 0);
     transition: transform 0.4s ease-out;
   }
+}
+body {
+  overflow-x: hidden;
 }
 .section-faq-info dd.active {
   animation: showDD 0.3s forwards;
@@ -258,7 +261,7 @@ body {
   header {
   }
   .header-container {
-    grid-column: 1/6;
+    grid-column: 1/4;
   }
   .header-container.active {
     animation: showheaderMobile 0.8s forwards ease;
@@ -305,14 +308,14 @@ body {
     /* background-color: red; */
   }
   .section-lista-projetos {
-    /* grid-column: 1/5; */
+    grid-column: 1/4;
     /* touch-action: auto; */
-    /* background-color: red; */
+    background-color: red;
     grid-row: 2/3;
   }
   .section-descricao-projeto {
     grid-column: 1/4;
-    background-color: red;
+
     grid-row: 1/2;
     /* width: 200px; */
     height: 200px;
